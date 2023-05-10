@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class RaycastController : MonoBehaviour
 {
-    Ray ray;
-    RaycastHit2D hit;
-    int layerMask;
     public Transform playerAvatar;
     public LineRenderer lineRenderer;
     public DynamicString targetName;
     public DynamicFloat targetDistance;
+    public DynamicFloat targetConfidence;
+    Ray ray;
+    RaycastHit2D hit;
+    int layerMask;
+    WorldObject currentSeenObject;
 
     // Start is called before the first frame update
     void Start()
@@ -36,8 +38,19 @@ public class RaycastController : MonoBehaviour
             lineRenderer.SetPosition(0, playerPoint);
             lineRenderer.SetPosition(1, hitPoint);
 
-            targetName.Value = hit.transform.GetComponent<WorldObject>().visorName;
+            if(currentSeenObject == null) 
+                currentSeenObject = hit.transform.GetComponent<WorldObject>();
+
+            if (currentSeenObject != hit.transform.GetComponent<WorldObject>())
+            {
+                currentSeenObject.BeingSeen = false;
+                currentSeenObject = hit.transform.GetComponent<WorldObject>();
+                currentSeenObject.BeingSeen = true;
+            }
+
+            targetName.Value = currentSeenObject.visorName;
             targetDistance.Value = hit.distance - 0.1f;
+            targetConfidence.Value = currentSeenObject.GetConfidence(targetDistance.Value);
         }
     }
 }

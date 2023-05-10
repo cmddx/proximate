@@ -16,7 +16,11 @@ public class DynamicFloat : ScriptableObject
             if (val != value)
             {
                 val = value;
-                changed.Raise();
+                if (changed != null)
+                {
+                    Debug.Log("raising event");
+                    changed.Raise();
+                }
             }
         }
     }

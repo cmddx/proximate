@@ -8,7 +8,8 @@ public class Proximity : MonoBehaviour
     public DynamicFloat targetDistance;
     public TextMeshProUGUI targetDistanceText;
 
-    public void UpdateTargetDistance(){
+    void Update()
+    {
         string distance = targetDistance.Value.ToString("F2");
         targetDistanceText.text = distance + "m";
     }

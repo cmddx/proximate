@@ -7,13 +7,13 @@ public class Compass : MonoBehaviour
     public DynamicFloat playerRotation;
     public List<Transform> compassLetters;
 
-    public void UpdateCompass()
+    void Update()
     {
-        transform.localRotation = Quaternion.Euler(0, 0, playerRotation.Value);
+        transform.localRotation = Quaternion.Euler(0, 0, -playerRotation.Value);
 
         foreach (Transform letter in compassLetters)
         {
-            letter.localRotation = Quaternion.Euler(0, 0, -playerRotation.Value);
+            letter.localRotation = Quaternion.Euler(0, 0, playerRotation.Value);
         }
     }
 }

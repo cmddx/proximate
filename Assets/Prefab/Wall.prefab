@@ -76,6 +76,14 @@ PrefabInstance:
       propertyPath: visorName
       value: wall
       objectReference: {fileID: 0}
+    - target: {fileID: 291096029818326729, guid: 6135a95c1bd204aaab65c91db4c6d0fe, type: 3}
+      propertyPath: maxConfidence
+      value: 99.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 291096029818326729, guid: 6135a95c1bd204aaab65c91db4c6d0fe, type: 3}
+      propertyPath: minConfidence
+      value: 99.2
+      objectReference: {fileID: 0}
     - target: {fileID: 291096029818326731, guid: 6135a95c1bd204aaab65c91db4c6d0fe, type: 3}
       propertyPath: m_Name
       value: Wall
