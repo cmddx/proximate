@@ -37,8 +37,6 @@ public class RandomObjectChange : MonoBehaviour
         {
             timePassed += Time.deltaTime;
 
-            Debug.Log("Time: " + timePassed);
-
             if (timePassed > 0.2f)
             {
                 timePassed = 0;

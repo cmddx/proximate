@@ -135,9 +135,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 531
-        width: 567
-        height: 177
+        y: 267
+        width: 292
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: sonav8_logo_1
       rect:
         serializedVersion: 2
-        x: 567
-        y: 531
-        width: 567
-        height: 177
+        x: 292
+        y: 267
+        width: 292
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: sonav8_logo_2
       rect:
         serializedVersion: 2
-        x: 1134
-        y: 531
-        width: 567
-        height: 177
+        x: 584
+        y: 267
+        width: 292
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: sonav8_logo_3
       rect:
         serializedVersion: 2
-        x: 1701
-        y: 531
-        width: 567
-        height: 177
+        x: 876
+        y: 267
+        width: 292
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +218,10 @@ TextureImporter:
       name: sonav8_logo_4
       rect:
         serializedVersion: 2
-        x: 2268
-        y: 531
-        width: 567
-        height: 177
+        x: 1168
+        y: 267
+        width: 292
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,9 +240,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 354
-        width: 567
-        height: 177
+        y: 178
+        width: 292
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,10 +260,10 @@ TextureImporter:
       name: sonav8_logo_6
       rect:
         serializedVersion: 2
-        x: 567
-        y: 354
-        width: 567
-        height: 177
+        x: 292
+        y: 178
+        width: 292
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +281,10 @@ TextureImporter:
       name: sonav8_logo_7
       rect:
         serializedVersion: 2
-        x: 1134
-        y: 354
-        width: 567
-        height: 177
+        x: 584
+        y: 178
+        width: 292
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +302,10 @@ TextureImporter:
       name: sonav8_logo_8
       rect:
         serializedVersion: 2
-        x: 1701
-        y: 354
-        width: 567
-        height: 177
+        x: 876
+        y: 178
+        width: 292
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,10 +323,10 @@ TextureImporter:
       name: sonav8_logo_9
       rect:
         serializedVersion: 2
-        x: 2268
-        y: 354
-        width: 567
-        height: 177
+        x: 1168
+        y: 178
+        width: 292
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -345,9 +345,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 177
-        width: 567
-        height: 177
+        y: 89
+        width: 292
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,10 +365,10 @@ TextureImporter:
       name: sonav8_logo_11
       rect:
         serializedVersion: 2
-        x: 567
-        y: 177
-        width: 567
-        height: 177
+        x: 292
+        y: 89
+        width: 292
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,10 +386,10 @@ TextureImporter:
       name: sonav8_logo_12
       rect:
         serializedVersion: 2
-        x: 1134
-        y: 177
-        width: 567
-        height: 177
+        x: 584
+        y: 89
+        width: 292
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -397,7 +397,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1356013cda6144e0a92ce48b29c59ec1
+      spriteID: bba8692406358421db4d78c52f6b9bb8
       internalID: 195137168
       vertices: []
       indices: 
@@ -407,10 +407,10 @@ TextureImporter:
       name: sonav8_logo_13
       rect:
         serializedVersion: 2
-        x: 1701
-        y: 177
-        width: 567
-        height: 177
+        x: 876
+        y: 89
+        width: 292
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,7 +418,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b7f7be0b979a426da065863e6613b5f
+      spriteID: 7f1340f63237f4b12a3182691e9d9e66
       internalID: 1682261193
       vertices: []
       indices: 
@@ -428,10 +428,10 @@ TextureImporter:
       name: sonav8_logo_14
       rect:
         serializedVersion: 2
-        x: 2268
-        y: 177
-        width: 567
-        height: 177
+        x: 1168
+        y: 89
+        width: 292
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -439,7 +439,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a90e7cfa7580046608a0f3a721a96d72
+      spriteID: 8373a308fb9274a26bdda7e0639d7802
       internalID: 79106911
       vertices: []
       indices: 
@@ -451,8 +451,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 567
-        height: 177
+        width: 292
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -460,7 +460,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 945307c60e54f4395b59ec91393974ea
+      spriteID: 15a503d251281449d950473ad6ef986e
       internalID: 216506887
       vertices: []
       indices: 
@@ -470,10 +470,10 @@ TextureImporter:
       name: sonav8_logo_16
       rect:
         serializedVersion: 2
-        x: 567
+        x: 292
         y: 0
-        width: 567
-        height: 177
+        width: 292
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -481,7 +481,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd70fc0c87d804dd085fe66872050567
+      spriteID: 9a8ee543b62254bb792f3234d1066bdb
       internalID: 323798990
       vertices: []
       indices: 
@@ -491,10 +491,10 @@ TextureImporter:
       name: sonav8_logo_17
       rect:
         serializedVersion: 2
-        x: 1134
+        x: 584
         y: 0
-        width: 567
-        height: 177
+        width: 292
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -502,7 +502,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d441387e7f9346d0ac4d64fb0f0afde
+      spriteID: 3786f49ec001f45299f5d24505186144
       internalID: 964809498
       vertices: []
       indices: 
@@ -512,10 +512,10 @@ TextureImporter:
       name: sonav8_logo_18
       rect:
         serializedVersion: 2
-        x: 1701
+        x: 876
         y: 0
-        width: 567
-        height: 177
+        width: 292
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -523,7 +523,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47cb2c842cdba42c880b8ac9bf80ba3b
+      spriteID: a8593629eeed54e80a33f44d5662a470
       internalID: -2110276907
       vertices: []
       indices: 

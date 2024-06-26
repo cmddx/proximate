@@ -5,8 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/Default Preferences")]
 public class DefaultPrefs : ScriptableObject
 {
-    public float musicVolume;
     public float sfxVolume;
+    public float voiceVolume;
     public int fullscreen;
-    public int moraleBar;
 }

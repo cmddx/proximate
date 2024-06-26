@@ -135,9 +135,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 105
-        width: 152
-        height: 35
+        y: 156
+        width: 228
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: call_slide1_1
       rect:
         serializedVersion: 2
-        x: 152
-        y: 105
-        width: 152
-        height: 35
+        x: 228
+        y: 156
+        width: 228
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: call_slide1_2
       rect:
         serializedVersion: 2
-        x: 304
-        y: 105
-        width: 152
-        height: 35
+        x: 456
+        y: 156
+        width: 228
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: call_slide1_3
       rect:
         serializedVersion: 2
-        x: 456
-        y: 105
-        width: 152
-        height: 35
+        x: 684
+        y: 156
+        width: 228
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,9 +219,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 70
-        width: 152
-        height: 35
+        y: 104
+        width: 228
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +239,10 @@ TextureImporter:
       name: call_slide1_5
       rect:
         serializedVersion: 2
-        x: 152
-        y: 70
-        width: 152
-        height: 35
+        x: 228
+        y: 104
+        width: 228
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,10 +260,10 @@ TextureImporter:
       name: call_slide1_6
       rect:
         serializedVersion: 2
-        x: 304
-        y: 70
-        width: 152
-        height: 35
+        x: 456
+        y: 104
+        width: 228
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +281,10 @@ TextureImporter:
       name: call_slide1_7
       rect:
         serializedVersion: 2
-        x: 456
-        y: 70
-        width: 152
-        height: 35
+        x: 684
+        y: 104
+        width: 228
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,9 +303,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 35
-        width: 152
-        height: 35
+        y: 52
+        width: 228
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,10 +323,10 @@ TextureImporter:
       name: call_slide1_9
       rect:
         serializedVersion: 2
-        x: 152
-        y: 35
-        width: 152
-        height: 35
+        x: 228
+        y: 52
+        width: 228
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,10 +344,10 @@ TextureImporter:
       name: call_slide1_10
       rect:
         serializedVersion: 2
-        x: 304
-        y: 35
-        width: 152
-        height: 35
+        x: 456
+        y: 52
+        width: 228
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,10 +365,10 @@ TextureImporter:
       name: call_slide1_11
       rect:
         serializedVersion: 2
-        x: 456
-        y: 35
-        width: 152
-        height: 35
+        x: 684
+        y: 52
+        width: 228
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -388,8 +388,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 152
-        height: 35
+        width: 228
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -407,10 +407,10 @@ TextureImporter:
       name: call_slide1_13
       rect:
         serializedVersion: 2
-        x: 152
+        x: 228
         y: 0
-        width: 152
-        height: 35
+        width: 228
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

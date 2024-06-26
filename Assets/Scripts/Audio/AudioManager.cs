@@ -26,6 +26,11 @@ public class AudioManager : MonoBehaviour
         InitializeAmbience(ambienceSound);
     }
 
+    public void PlayOneShot(EventReference sound)
+    {
+        PlayOneShot(sound, Vector3.zero);
+    }
+
     public void PlayOneShot(EventReference sound, Vector3 worldPos)
     {
         RuntimeManager.PlayOneShot(sound, worldPos);
@@ -52,5 +57,15 @@ public class AudioManager : MonoBehaviour
             eventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
             eventInstance.release();
         }
+    }
+
+    public void PauseAudio()
+    {
+        RuntimeManager.PauseAllEvents(true);
+    }
+
+    public void UnpauseAudio()
+    {
+        RuntimeManager.PauseAllEvents(false);
     }
 }

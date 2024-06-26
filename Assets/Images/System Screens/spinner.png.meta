@@ -135,9 +135,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 360
-        width: 117
-        height: 120
+        y: 120
+        width: 39
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: spinner_1
       rect:
         serializedVersion: 2
-        x: 117
-        y: 360
-        width: 117
-        height: 120
+        x: 39
+        y: 120
+        width: 39
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: spinner_2
       rect:
         serializedVersion: 2
-        x: 234
-        y: 360
-        width: 117
-        height: 120
+        x: 78
+        y: 120
+        width: 39
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: spinner_3
       rect:
         serializedVersion: 2
-        x: 351
-        y: 360
-        width: 117
-        height: 120
+        x: 117
+        y: 120
+        width: 39
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,9 +219,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 240
-        width: 117
-        height: 120
+        y: 80
+        width: 39
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +239,10 @@ TextureImporter:
       name: spinner_5
       rect:
         serializedVersion: 2
-        x: 117
-        y: 240
-        width: 117
-        height: 120
+        x: 39
+        y: 80
+        width: 39
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,10 +260,10 @@ TextureImporter:
       name: spinner_6
       rect:
         serializedVersion: 2
-        x: 234
-        y: 240
-        width: 117
-        height: 120
+        x: 78
+        y: 80
+        width: 39
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +281,10 @@ TextureImporter:
       name: spinner_7
       rect:
         serializedVersion: 2
-        x: 351
-        y: 240
-        width: 117
-        height: 120
+        x: 117
+        y: 80
+        width: 39
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,9 +303,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 120
-        width: 117
-        height: 120
+        y: 40
+        width: 39
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,10 +323,10 @@ TextureImporter:
       name: spinner_9
       rect:
         serializedVersion: 2
-        x: 117
-        y: 120
-        width: 117
-        height: 120
+        x: 39
+        y: 40
+        width: 39
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,10 +344,10 @@ TextureImporter:
       name: spinner_10
       rect:
         serializedVersion: 2
-        x: 234
-        y: 120
-        width: 117
-        height: 120
+        x: 78
+        y: 40
+        width: 39
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,10 +365,10 @@ TextureImporter:
       name: spinner_11
       rect:
         serializedVersion: 2
-        x: 351
-        y: 120
-        width: 117
-        height: 120
+        x: 117
+        y: 40
+        width: 39
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -388,8 +388,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 117
-        height: 120
+        width: 39
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -407,10 +407,10 @@ TextureImporter:
       name: spinner_13
       rect:
         serializedVersion: 2
-        x: 117
+        x: 39
         y: 0
-        width: 117
-        height: 120
+        width: 39
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,10 +428,10 @@ TextureImporter:
       name: spinner_14
       rect:
         serializedVersion: 2
-        x: 234
+        x: 78
         y: 0
-        width: 117
-        height: 120
+        width: 39
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -449,10 +449,10 @@ TextureImporter:
       name: spinner_15
       rect:
         serializedVersion: 2
-        x: 351
+        x: 117
         y: 0
-        width: 117
-        height: 120
+        width: 39
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
