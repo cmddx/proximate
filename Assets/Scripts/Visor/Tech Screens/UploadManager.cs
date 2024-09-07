@@ -9,6 +9,7 @@ using FMOD.Studio;
 public class UploadManager : MonoBehaviour
 {
     [SerializeField] TimelineManager defaultTimeline;
+    [SerializeField] TimelineManager noticeTimeline;
     [SerializeField] TimelineAsset navToUp;
     [SerializeField] TimelineAsset upToDocs;
     [SerializeField] DocumentList documentList;
@@ -18,7 +19,8 @@ public class UploadManager : MonoBehaviour
     [SerializeField] FMODUnity.EventReference downloadSound;
     [SerializeField] FMODUnity.EventReference finishedSound;
     [SerializeField] ProgressUnlocker progressUnlocker;
-
+    [SerializeField] ScriptableBool dogMode;
+    [SerializeField] TimelineAsset dogModeFix;
 
     List<DocumentData> documentsToUpload;
 
@@ -41,6 +43,11 @@ public class UploadManager : MonoBehaviour
             }
 
             foundDoc.uploaded = true;
+        }
+
+        if(dogMode.value == true){
+            noticeTimeline.PlayTimeline(dogModeFix);
+            dogMode.value = false;
         }
     }
 

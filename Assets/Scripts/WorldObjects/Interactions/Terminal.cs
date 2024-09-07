@@ -16,7 +16,7 @@ public class Terminal : Interactable
     [SerializeField] GameObject alternativeGoal;
     [SerializeField] GoalIcon goalIcon;
 
-    bool alreadyConnected;
+    public bool alreadyConnected;
 
     public override void Interact()
     {

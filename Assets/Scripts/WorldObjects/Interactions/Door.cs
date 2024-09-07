@@ -71,10 +71,10 @@ public class Door : Interactable
         }
 
         ConditionData condition = conditionList.
-            FindItemFromReferenceName("progressIndex");
+            Get("progressIndex");
 
         ConditionData optionalCondition = conditionList.
-            FindItemFromReferenceName(optionalConditionRequirement);
+            Get(optionalConditionRequirement);
 
         if (condition.value < progressIndexRequirement ||
             (optionalCondition != null && optionalCondition.value == 0))

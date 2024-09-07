@@ -31,7 +31,7 @@ public class ConsoleMain : MonoBehaviour
     public void UnlockAirlock()
     {
         ConditionData condition = conditions.
-            FindItemFromReferenceName("bottomAirlockUnlocked");
+            Get("bottomAirlockUnlocked");
 
         if (condition.value == 1)
         {
@@ -46,14 +46,14 @@ public class ConsoleMain : MonoBehaviour
         subtitleTimeline.PlayTimeline(airlockUnlock);
 
         condition = conditions.
-            FindItemFromReferenceName("topAirlockUnlocked");
+            Get("topAirlockUnlocked");
         condition.value = 0;
     }
 
     public void ExitConsole()
     {
         int progressIndex = conditions.
-            FindItemFromReferenceName("progressIndex").value;
+            Get("progressIndex").value;
 
         if (!finalCallPlayed && progressIndex == 9)
         {

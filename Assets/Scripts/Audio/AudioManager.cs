@@ -50,7 +50,7 @@ public class AudioManager : MonoBehaviour
         ambienceEventInstance.start();
     }
 
-    void CleanUp()
+    public void CleanUp()
     {
         foreach (EventInstance eventInstance in eventInstances)
         {

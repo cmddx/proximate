@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 313.1, y: -77}
+  m_AnchoredPosition: {x: 313.1, y: -76.1}
   m_SizeDelta: {x: 613.75073, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3660828891573259915
@@ -167,7 +167,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1010534816658509387, guid: dcc0d617c542447d287f9e56786c2685, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 1010534816658509387, guid: dcc0d617c542447d287f9e56786c2685, type: 3}
       propertyPath: m_AnchorMax.x
@@ -227,7 +227,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1010534816658509387, guid: dcc0d617c542447d287f9e56786c2685, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 10.800003
+      value: 10.799988
       objectReference: {fileID: 0}
     - target: {fileID: 1010534816658509387, guid: dcc0d617c542447d287f9e56786c2685, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -241,17 +241,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1852496662749853287, guid: dcc0d617c542447d287f9e56786c2685, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1852496662749853287, guid: dcc0d617c542447d287f9e56786c2685, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3361866085156242541, guid: dcc0d617c542447d287f9e56786c2685, type: 3}
       propertyPath: m_text
       value: toodle search history // (willow o.)/27183
       objectReference: {fileID: 0}
+    - target: {fileID: 3586038800308585451, guid: dcc0d617c542447d287f9e56786c2685, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 301.29
+      objectReference: {fileID: 0}
     - target: {fileID: 5636562146395211053, guid: dcc0d617c542447d287f9e56786c2685, type: 3}
       propertyPath: m_Name
-      value: xx_willowSearchLog.txt
+      value: 09_willowSearchLog.txt
+      objectReference: {fileID: 0}
+    - target: {fileID: 8121682343043858481, guid: dcc0d617c542447d287f9e56786c2685, type: 3}
+      propertyPath: m_Size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8121682343043858481, guid: dcc0d617c542447d287f9e56786c2685, type: 3}
       propertyPath: m_Value
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

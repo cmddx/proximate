@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a0557a9e13f4646479a0031ff3015ca5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - conditions: {fileID: 11400000, guid: 7e2b5a65821034f45a23f99f55c34a86, type: 2}
+  - downloadManager: {instanceID: 0}
+  - playAfterDownload: {instanceID: 0}
+  - goalMarker: {instanceID: 0}
+  - goalIcon: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

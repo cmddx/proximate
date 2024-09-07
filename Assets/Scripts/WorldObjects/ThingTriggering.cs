@@ -25,6 +25,7 @@ public class ThingTriggering : MonoBehaviour
         glitchSoundInstance.start();
 
         GetComponent<ThingSounds>().StartScreaming();
+
         GetComponent<ThingMovement>().enabled = false;
     }
 

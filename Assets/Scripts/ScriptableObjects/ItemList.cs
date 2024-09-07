@@ -6,7 +6,7 @@ public class ItemList<T> : ScriptableObject
 {
     public List<T> items;
 
-    public T FindItemFromReferenceName(string referenceName)
+    public T Get(string referenceName)
     {
         foreach (T item in items)
         {

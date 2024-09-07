@@ -33430,7 +33430,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190319688132866609, guid: 10b1f3dee02564a248a850a0babbc3cb, type: 3}
       propertyPath: m_Name
-      value: xx_ellawillow512.chat
+      value: 54_ellawillow512.chat
       objectReference: {fileID: 0}
     - target: {fileID: 2208527962075656961, guid: 10b1f3dee02564a248a850a0babbc3cb, type: 3}
       propertyPath: m_text

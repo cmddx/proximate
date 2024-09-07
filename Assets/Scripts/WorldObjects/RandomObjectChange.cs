@@ -14,12 +14,13 @@ public class RandomObjectChange : MonoBehaviour
     [SerializeField] List<RandomObjectChange> sisters;
 
 
-
     WorldObject worldObject;
     string defaultName;
     float defaultMinConfidence;
     float defaultMaxConfidence;
     float timePassed;
+    float timePassedTotal;
+
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +36,7 @@ public class RandomObjectChange : MonoBehaviour
     {
         if (worldObject.BeingSeen)
         {
+            timePassedTotal += Time.deltaTime;
             timePassed += Time.deltaTime;
 
             if (timePassed > 0.2f)
@@ -46,15 +48,15 @@ public class RandomObjectChange : MonoBehaviour
                     worldObject.visorName = defaultName;
                     worldObject.minConfidence = defaultMinConfidence;
                     worldObject.maxConfidence = defaultMaxConfidence;
-                    if(disableAfter) this.enabled = false;
+                    if (disableAfter) this.enabled = false;
                     foreach (RandomObjectChange sister in sisters)
                     {
                         sister.enabled = false;
                     }
                 }
-                
+
                 float randomNum = Random.Range(0, 100);
-                if (probability >= randomNum)
+                if (probability >= randomNum && timePassedTotal > 6f)
                 {
                     worldObject.visorName = newName;
                     worldObject.minConfidence = newMinConfidence;

@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   items:
   - conditionName: progressIndex
-    value: 8
+    value: 0
   - conditionName: callIndex
-    value: 4
+    value: 0
   - conditionName: mapDownloaded
-    value: 1
+    value: 0
   - conditionName: bottomAirlockUnlocked
     value: 0
   - conditionName: topAirlockUnlocked
-    value: 1
+    value: 0

@@ -9,12 +9,21 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rigidBody;
     public Camera cam;
     [SerializeField] FMODUnity.EventReference footstepsSound;
+    [SerializeField] FMODUnity.EventReference bumpFrontSound;
+    [SerializeField] FMODUnity.EventReference bumpLeftSound;
+    [SerializeField] FMODUnity.EventReference bumpRightSound;
+
+    [SerializeField] GameEvent bumpFront;
+    [SerializeField] GameEvent bumpLeft;
+    [SerializeField] GameEvent bumpRight;
     private EventInstance footstepTrack;
     public EventInstance FootstepTrack
     {
         get { return footstepTrack; }
     }
     bool collided;
+    bool pushLeft;
+    bool pushRight;
     bool walking;
 
     void Start()
@@ -29,15 +38,31 @@ public class PlayerMovement : MonoBehaviour
 
         Vector2 velocityVert = new Vector2(0, 0);
         Vector2 velocityHoriz = new Vector2(0, 0);
+        Vector2 inputVelocityVert = new Vector2(0, 0);
+        Vector2 inputVelocityHoriz = new Vector2(0, 0); 
+        Vector2 pushVelocityVert = new Vector2(0, 0);
+        Vector2 pushVelocityHoriz = new Vector2(0, 0);
 
         if (inputX != 0)
         {
-            velocityHoriz = transform.right * inputX;
+            inputVelocityHoriz = transform.right * inputX;
         }
         if (inputY != 0)
         {
-            velocityVert = transform.up * inputY;
+            inputVelocityVert = transform.up * inputY;
         }
+
+        if (pushLeft)
+        {
+            pushVelocityHoriz -= (Vector2)transform.right * 0.1f;
+        }
+        if (pushRight)
+        {
+            pushVelocityHoriz += (Vector2)transform.right * 0.1f;
+        }
+
+        velocityVert = inputVelocityVert + pushVelocityVert;
+        velocityHoriz = inputVelocityHoriz + pushVelocityHoriz;
 
         rigidBody.velocity = (velocityHoriz + velocityVert) * speed;
         cam.transform.position = new Vector3(transform.position.x,
@@ -68,9 +93,58 @@ public class PlayerMovement : MonoBehaviour
         collided = true;
     }
 
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        Vector2 playerFront = new Vector2(transform.position.x +
+        transform.up.x * 0.1f, transform.position.y + transform.up.y * 0.1f);
+
+        Vector2 pointA = new Vector2(playerFront.x - transform.position.x,
+            playerFront.y - transform.position.y);
+        Vector2 pointB = new Vector2(collision.contacts[0].point.x - transform.position.x,
+            collision.contacts[0].point.y - transform.position.y);
+
+        float angle = Vector2.SignedAngle(pointA, pointB);
+
+        if (angle < 0 && angle > -180)
+        {
+            pushLeft = true;
+            pushRight = false;
+        }
+        else if (angle > 0 && angle < 180)
+        {
+            pushRight = true;
+            pushLeft = false;
+        }
+
+        // i hate this
+
+        // if (angle < 45 && angle > -45)
+        // {
+        //     bumpFront.Raise();
+        //     AudioManager.instance.PlayOneShot(bumpFrontSound, transform.position);
+        // }
+        // else if (angle <= -45 && angle >= -145)
+        // {
+        //     bumpRight.Raise();
+        //     AudioManager.instance.PlayOneShot(bumpRightSound, transform.position);
+        // }
+        // else if (angle >= 45 && angle <= 145)
+        // {
+        //     bumpLeft.Raise();
+        //     AudioManager.instance.PlayOneShot(bumpLeftSound, transform.position);
+        // }
+        // else
+        // {
+        //     bumpFront.Raise();
+        //     AudioManager.instance.PlayOneShot(bumpFrontSound, transform.position);
+        // }
+    }
+
     void OnCollisionExit2D(Collision2D collision)
     {
         collided = false;
+        pushLeft = false;
+        pushRight = false;
     }
 
     void OnDisable()

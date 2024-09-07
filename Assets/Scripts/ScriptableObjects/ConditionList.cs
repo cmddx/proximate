@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/Condition List")]
 public class ConditionList : ItemList<ConditionData>
 {
-    public new ConditionData FindItemFromReferenceName(string referenceName)
+    public new ConditionData Get(string referenceName)
     {
         foreach (ConditionData conditionData in items)
         {

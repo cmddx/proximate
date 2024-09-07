@@ -34,7 +34,7 @@ public class NavMap : MonoBehaviour
     void OnEnable()
     {
         ConditionData condition = conditionList.
-            FindItemFromReferenceName("mapDownloaded");
+            Get("mapDownloaded");
         if (condition.value == 1)
         {
             emptyMap.SetActive(false);

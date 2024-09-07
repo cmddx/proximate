@@ -16,7 +16,7 @@ public class MapScreen : MonoBehaviour
     void OnEnable()
     {
         ConditionData downloaded = conditionList.
-            FindItemFromReferenceName("mapDownloaded");
+            Get("mapDownloaded");
         if (downloaded.value == 1) downloadButton.SetActive(false);
     }
 
@@ -32,7 +32,7 @@ public class MapScreen : MonoBehaviour
         downloadManager.StartDownload(mapDocuments, true);
 
         ConditionData condition = conditionList.
-            FindItemFromReferenceName("mapDownloaded");
+            Get("mapDownloaded");
         condition.value = 1;
     }
 }

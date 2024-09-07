@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 313.1, y: -77}
+  m_AnchoredPosition: {x: 313.1, y: -76.75}
   m_SizeDelta: {x: 613.75073, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3660828891573259915
@@ -250,7 +250,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5636562146395211053, guid: dcc0d617c542447d287f9e56786c2685, type: 3}
       propertyPath: m_Name
-      value: xx_simonSearchLog.txt
+      value: 27_simonSearchLog.txt
+      objectReference: {fileID: 0}
+    - target: {fileID: 8121682343043858481, guid: dcc0d617c542447d287f9e56786c2685, type: 3}
+      propertyPath: m_Size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8121682343043858481, guid: dcc0d617c542447d287f9e56786c2685, type: 3}
       propertyPath: m_Value

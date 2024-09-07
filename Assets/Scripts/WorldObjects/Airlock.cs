@@ -31,7 +31,7 @@ public class Airlock : MonoBehaviour
             bottomDoor.CloseDoor();
 
             ConditionData condition = conditions.
-                FindItemFromReferenceName("bottomAirlockUnlocked");
+                Get("bottomAirlockUnlocked");
             condition.value = 0;
 
             deActivated = true;
@@ -44,7 +44,7 @@ public class Airlock : MonoBehaviour
             topDoor.CloseDoor();
 
             ConditionData condition = conditions.
-                FindItemFromReferenceName("topAirlockUnlocked");
+                Get("topAirlockUnlocked");
             condition.value = 0;
 
             deActivated = true;
@@ -65,7 +65,7 @@ public class Airlock : MonoBehaviour
         unlockTopEmitter.Play();
 
         ConditionData condition = conditions.
-                FindItemFromReferenceName("topAirlockUnlocked");
+                Get("topAirlockUnlocked");
         condition.value = 1;
     }
     IEnumerator UnlockBottomDoor()
@@ -74,7 +74,7 @@ public class Airlock : MonoBehaviour
         unlockBottomEmitter.Play();
 
         ConditionData condition = conditions.
-                FindItemFromReferenceName("bottomAirlockUnlocked");
+                Get("bottomAirlockUnlocked");
         condition.value = 1;
     }
 
@@ -82,12 +82,12 @@ public class Airlock : MonoBehaviour
     {
         unlockTopEmitter.Play();
         ConditionData condition = conditions.
-                FindItemFromReferenceName("topAirlockUnlocked");
+                Get("topAirlockUnlocked");
         condition.value = 1;
 
         unlockBottomEmitter.Play();
         condition = conditions.
-                FindItemFromReferenceName("bottomAirlockUnlocked");
+                Get("bottomAirlockUnlocked");
         condition.value = 1;
     }
 
@@ -107,7 +107,7 @@ public class Airlock : MonoBehaviour
         bool malfunction = false;
 
         // if both terminals in Recreation have been accessed
-        if (documents.items[27].unlocked && documents.items[32].unlocked)
+        if (documents.items[26].unlocked && documents.items[31].unlocked)
             malfunction = true;
 
         return malfunction;

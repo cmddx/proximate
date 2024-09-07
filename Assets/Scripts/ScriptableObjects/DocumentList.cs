@@ -55,8 +55,6 @@ public class DocumentList : ItemList<DocumentData>
     }
 }
 
-
-
 [System.Serializable]
 public class DocumentData
 {

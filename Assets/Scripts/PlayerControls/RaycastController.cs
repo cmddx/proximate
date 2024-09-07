@@ -12,7 +12,6 @@ public class RaycastController : MonoBehaviour
     public DynamicFloat targetDistance;
     public DynamicFloat targetConfidence;
     public DynamicInt thingBeingSeen;
-    Ray ray;
     RaycastHit2D hit;
     int layerMask;
     WorldObject currentSeenObject;
@@ -32,6 +31,7 @@ public class RaycastController : MonoBehaviour
     void Update()
     {
         hit = Physics2D.Raycast(playerAvatar.position, playerAvatar.up, 100, layerMask);
+        
         if (hit.collider != null)
         {
             Vector3 playerPoint = new Vector3(playerAvatar.position.x,

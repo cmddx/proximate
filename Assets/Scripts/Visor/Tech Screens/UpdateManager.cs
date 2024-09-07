@@ -56,7 +56,7 @@ public class UpdateManager : MonoBehaviour
 
                 intervalTicker = 0f;
 
-                // if(intervalCount == 2) knocking.StartKnocking();
+                if(intervalCount == 2) knocking.StartKnocking();
                 intervalCount++;
             }
 

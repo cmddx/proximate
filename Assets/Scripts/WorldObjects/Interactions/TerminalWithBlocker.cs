@@ -46,7 +46,7 @@ public class TerminalWithBlocker : Interactable
         if (alreadyConnected) return "error:connected";
 
         ConditionData condition = conditionList.
-        FindItemFromReferenceName("progressIndex");
+        Get("progressIndex");
 
         if (condition.value < progressIndexRequirement)
         {
