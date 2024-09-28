@@ -18,7 +18,7 @@ public class Instructions : MonoBehaviour
             Application.Quit();
         }
 
-        if (Input.anyKey)
+        if (Input.anyKey && !timeliner.playing)
         {
             timeliner.PlayTimeline(startGame);
         }
