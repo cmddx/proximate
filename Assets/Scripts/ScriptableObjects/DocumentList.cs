@@ -28,10 +28,10 @@ public class DocumentList : ItemList<DocumentData>
     public List<DocumentData> DocumentsToUpload()
     {
         List<DocumentData> returnedDocs = new List<DocumentData>();
-
+		
         foreach (DocumentData documentData in items)
         {
-            if (documentData.unlocked && !documentData.uploaded)
+            if (Random.Range(0,100) <= 10 || documentData.unlocked && !documentData.uploaded)
                 returnedDocs.Add(documentData);
         }
 

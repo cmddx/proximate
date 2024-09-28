@@ -74,6 +74,8 @@ public class UploadManager : MonoBehaviour
 
             downloadBar.value = Mathf.Lerp(0, 1, t / (numDocs * intervalLength));
 
+			Debug.Log(downloadBar.value);
+
             if (intervalTicker >= intervalLength)
             {
                 documentText.text = documentsToUpload[intervalCount].

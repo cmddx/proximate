@@ -26,11 +26,11 @@ public class Instructions : MonoBehaviour
 
     void OnEnable()
     {
-        playerMov.enabled = false;
-        playerRot.enabled = false;
-        rayCont.enabled = false;
+        // playerMov.enabled = false;
+        // playerRot.enabled = false;
+        // rayCont.enabled = false;
 
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        // Cursor.lockState = CursorLockMode.Locked;
+        // Cursor.visible = false;
     }
 }

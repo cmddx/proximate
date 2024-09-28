@@ -8,6 +8,12 @@ public class GoalMarkers : MonoBehaviour
     
     public void UnlockNextMarkers(int progressIndex)
     {
+		if (markerGroups.Count <= progressIndex)
+		{
+			Debug.LogWarning("Index was out of range.");
+			return;
+		}
+
         markerGroups[progressIndex].SetActive(true);
 
         if (progressIndex > 0)

@@ -46,7 +46,14 @@ public class ProgressUnlocker : MonoBehaviour
 
     IEnumerator ShowNotif(int progressIndex)
     {
-        yield return new WaitForSeconds(0.8f);
-        subtitleTimeline.PlayTimeline(unlockNotifs[progressIndex]);
+		if (unlockNotifs.Count > progressIndex) 
+		{
+			yield return new WaitForSeconds(0.8f);
+        	subtitleTimeline.PlayTimeline(unlockNotifs[progressIndex]);
+		}
+		else
+		{
+			Debug.LogWarning("Index was out of range.");
+		}
     }
 }

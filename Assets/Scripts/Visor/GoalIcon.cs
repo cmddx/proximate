@@ -12,6 +12,11 @@ public class GoalIcon : MonoBehaviour
     [SerializeField] int minIconDistance;
     List<GameObject> currentGoals;
 
+	void Start()
+	{
+		currentGoals = new List<GameObject>();
+	}
+
     // Update is called once per frame
     void Update()
     {
@@ -61,6 +66,12 @@ public class GoalIcon : MonoBehaviour
 
     public void SetCurrentGoals(int progressIndex)
     {
+		if (goalObjects.Count <= progressIndex) 
+		{
+			Debug.LogWarning("Index was out of range.");
+			return;
+		}
+		
         currentGoals = goalObjects[progressIndex].list;
 
         for (int i = 0; i < currentGoals.Count; i++)
