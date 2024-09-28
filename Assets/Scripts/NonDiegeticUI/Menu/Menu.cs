@@ -88,7 +88,7 @@ public class Menu : MonoBehaviour
         GetComponent<UnityEngine.UI.Image>().enabled = false;
         visorDisplay.SetActive(true);
 
-        glitchMat.SetFloat("_Strength", glitchMatValue);
+        // glitchMat.SetFloat("_Strength", glitchMatValue);
 
         if (cursorWasLocked)
         {
