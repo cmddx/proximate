@@ -33,6 +33,8 @@ public class TimelineManager : MonoBehaviour
         //     }
         // }
 
+		if (playing && director.playableAsset == timelineToPlay) return;
+
         director.playableAsset = timelineToPlay;
         director.Play();
 
