@@ -9,6 +9,8 @@ public class TimelineManager : MonoBehaviour
     // public static TimelineManager instance { get; private set; }
     [SerializeField] PlayableDirector director;
 
+	public bool playing { get { return director.state == PlayState.Playing; } }
+
     // private void Awake()
     // {
     //     if (instance != null)
@@ -30,6 +32,8 @@ public class TimelineManager : MonoBehaviour
         //         return;
         //     }
         // }
+
+		if (playing && director.playableAsset == timelineToPlay) return;
 
         director.playableAsset = timelineToPlay;
         director.Play();
