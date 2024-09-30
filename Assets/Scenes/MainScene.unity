@@ -31660,7 +31660,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Demo build has no save functionality. Are you sure you want to quit?
+  m_text: Are you sure you want to quit?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9028980be936b49dcb39acd2c0ddece1, type: 2}
   m_sharedMaterial: {fileID: -3417570861773402072, guid: 9028980be936b49dcb39acd2c0ddece1, type: 2}
@@ -31687,8 +31687,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 16
@@ -42819,6 +42819,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4078890528823707605, guid: 69e0c4bd92bcd44b18a32d8966691b6d, type: 3}
+      propertyPath: m_fontSize
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 4078890528823707605, guid: 69e0c4bd92bcd44b18a32d8966691b6d, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 51
+      objectReference: {fileID: 0}
     - target: {fileID: 4331858859105647716, guid: 69e0c4bd92bcd44b18a32d8966691b6d, type: 3}
       propertyPath: m_Name
       value: Yes
@@ -42827,9 +42835,21 @@ PrefabInstance:
       propertyPath: m_text
       value: Yes
       objectReference: {fileID: 0}
+    - target: {fileID: 4765749748441420052, guid: 69e0c4bd92bcd44b18a32d8966691b6d, type: 3}
+      propertyPath: m_fontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765749748441420052, guid: 69e0c4bd92bcd44b18a32d8966691b6d, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 24
+      objectReference: {fileID: 0}
     - target: {fileID: 4895417356890999825, guid: 69e0c4bd92bcd44b18a32d8966691b6d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 160
+      value: 147.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4895417356890999825, guid: 69e0c4bd92bcd44b18a32d8966691b6d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 4.4
       objectReference: {fileID: 0}
     - target: {fileID: 5286797039969566430, guid: 69e0c4bd92bcd44b18a32d8966691b6d, type: 3}
       propertyPath: m_IsActive
@@ -42905,7 +42925,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5290599614942739978, guid: 69e0c4bd92bcd44b18a32d8966691b6d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -35
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5290599614942739978, guid: 69e0c4bd92bcd44b18a32d8966691b6d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -48678,7 +48698,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1406474731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53360,7 +53380,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1574523612
 RectTransform:
   m_ObjectHideFlags: 0
@@ -56513,6 +56533,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4078890528823707605, guid: 69e0c4bd92bcd44b18a32d8966691b6d, type: 3}
+      propertyPath: m_fontSize
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 4078890528823707605, guid: 69e0c4bd92bcd44b18a32d8966691b6d, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 51
+      objectReference: {fileID: 0}
     - target: {fileID: 4331858859105647716, guid: 69e0c4bd92bcd44b18a32d8966691b6d, type: 3}
       propertyPath: m_Name
       value: No
@@ -56521,9 +56549,21 @@ PrefabInstance:
       propertyPath: m_text
       value: no
       objectReference: {fileID: 0}
+    - target: {fileID: 4765749748441420052, guid: 69e0c4bd92bcd44b18a32d8966691b6d, type: 3}
+      propertyPath: m_fontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765749748441420052, guid: 69e0c4bd92bcd44b18a32d8966691b6d, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 24
+      objectReference: {fileID: 0}
     - target: {fileID: 4895417356890999825, guid: 69e0c4bd92bcd44b18a32d8966691b6d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 160
+      value: 148
+      objectReference: {fileID: 0}
+    - target: {fileID: 4895417356890999825, guid: 69e0c4bd92bcd44b18a32d8966691b6d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 4.4
       objectReference: {fileID: 0}
     - target: {fileID: 5286797039969566430, guid: 69e0c4bd92bcd44b18a32d8966691b6d, type: 3}
       propertyPath: m_IsActive
@@ -56599,7 +56639,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5290599614942739978, guid: 69e0c4bd92bcd44b18a32d8966691b6d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -35
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5290599614942739978, guid: 69e0c4bd92bcd44b18a32d8966691b6d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
