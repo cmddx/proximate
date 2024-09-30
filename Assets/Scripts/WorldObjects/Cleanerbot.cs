@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Cleanerbot : MonoBehaviour
 {
-    [SerializeField] Vector3 targetDestination;
+    public Vector3 targetDestination;
     [SerializeField] FMODUnity.StudioEventEmitter emitter;
     [SerializeField] Door lobbyNorthDoor;
 

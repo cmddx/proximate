@@ -14,7 +14,7 @@ public class Console : Interactable
 
     void Start()
     {
-        consoleEnabled = false;
+        consoleEnabled = true;
     }
 
     public override void Interact()

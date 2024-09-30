@@ -6,14 +6,14 @@ public class PlayerRotation : MonoBehaviour
 {
     public float speed;
     public DynamicFloat playerRotation;
-    float aim;
+    float aimChange;
 
     // Update is called once per frame
     void Update()
     {
-        aim += Input.GetAxis("Mouse X");
+        aimChange = Input.GetAxis("Mouse X");
 
-        transform.localRotation = Quaternion.Euler(0, 0, -aim * speed);
-        playerRotation.Value = -aim * speed;
+        transform.localEulerAngles += new Vector3(0, 0, -aimChange * speed);
+        playerRotation.Value = transform.localEulerAngles.z;
     }
 }

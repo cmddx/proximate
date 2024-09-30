@@ -19,8 +19,7 @@ public class TerminalWithBlocker : Interactable
     public ConditionList conditionList;
     public string blockerName;
 
-
-    bool alreadyConnected;
+    public bool alreadyConnected;
 
     public override void Interact()
     {

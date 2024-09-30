@@ -14,7 +14,6 @@ public class NavMap : MonoBehaviour
     [SerializeField] GameObject mapImage;
     [SerializeField] GameObject deletedMap;
 
-
     [System.Serializable]
     struct MapMarker
     {
@@ -30,6 +29,10 @@ public class NavMap : MonoBehaviour
     MapMarker currentGameZone;
     MapMarker currentDrawnZone;
 
+    void Start(){
+        ConditionData progressIndex = conditionList.Get("progressIndex");
+        if(progressIndex.value >= 3) DeleteMap();
+    }
 
     void OnEnable()
     {

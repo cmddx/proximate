@@ -2,15 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SetLobby1 : SettableRoom
+public class SetLobby2 : SettableRoom
 {
+    [SerializeField] TerminalWithBlocker riotsLaptop;
     public override void SetToDefault()
     {
-        SetTerminalsConnected(false);
+        riotsLaptop.alreadyConnected = false;
     }
 
     public override void SetToComplete()
     {
-        SetTerminalsConnected(true);
+        riotsLaptop.alreadyConnected = true;
     }
 }

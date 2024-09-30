@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using FMODUnity;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,6 +14,8 @@ public class Menu : MonoBehaviour
     [SerializeField] GameObject menuQuit;
     [SerializeField] Material glitchMat;
     [SerializeField] GameObject instructions;
+    [SerializeField] SaveController saveController;
+    [SerializeField] TextMeshProUGUI lastSavedText;
     bool menuOpen;
     bool cursorWasLocked;
     bool playerHadControl;
@@ -74,6 +77,9 @@ public class Menu : MonoBehaviour
         visorDisplay.SetActive(false);
         GetComponent<UnityEngine.UI.Image>().enabled = true;
 
+        lastSavedText.text = "last saved " + saveController.MinutesSinceLastSave()
+            + " minutes ago";
+
         menuContents.SetActive(true);
     }
 
@@ -108,5 +114,4 @@ public class Menu : MonoBehaviour
 
         Time.timeScale = 1;
     }
-
 }

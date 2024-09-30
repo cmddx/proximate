@@ -11,6 +11,7 @@ public class ProgressUnlocker : MonoBehaviour
     [SerializeField] ConditionList conditions;
     [SerializeField] GoalMarkers goalMarkers;
     [SerializeField] GoalIcon goalIcons;
+    [SerializeField] SaveController saveController;
     ConditionData progressIndex;
 
     void Start()
@@ -34,6 +35,7 @@ public class ProgressUnlocker : MonoBehaviour
         StartCoroutine(ShowNotif(progressIndex.value));
 
         progressIndex.value++;
+        saveController.SaveGame();
 
         if(progressIndex.value == 9) return;
 

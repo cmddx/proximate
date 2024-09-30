@@ -30,19 +30,19 @@ MonoBehaviour:
     uploaded: 1
     read: 0
   - documentPrefab: {fileID: 1860047891389051865, guid: 1d01cf801588348cb8de2237f8d3456e, type: 3}
-    unlocked: 0
+    unlocked: 1
     uploaded: 0
     read: 0
   - documentPrefab: {fileID: 5760669905694676204, guid: bb9cd4f941600497daea1f187b4ab391, type: 3}
-    unlocked: 0
+    unlocked: 1
     uploaded: 0
     read: 0
   - documentPrefab: {fileID: 5760669905694676204, guid: a5c1bf9b202f743d799a342e3d78298f, type: 3}
-    unlocked: 0
+    unlocked: 1
     uploaded: 0
     read: 0
   - documentPrefab: {fileID: 6347744857270648934, guid: 5576adcd0620e42f8bf4b3cb45dc63fd, type: 3}
-    unlocked: 0
+    unlocked: 1
     uploaded: 0
     read: 0
   - documentPrefab: {fileID: 6424203872896214841, guid: c325c1cd57a444c6b8582687266ad3e5, type: 3}
