@@ -13,20 +13,16 @@ public class SaveController : MonoBehaviour
     [SerializeField] EnvironmentProgession envProg;
 
     string saveFileName = "save.txt";
-    public float timeSinceSave;
+    float timeSinceSave;
 
     void Awake()
     {
-        LoadGame();
-
-        envProg.SetEnvironment();
-
         if (SaveFileExists())
         {
+            LoadGame();
         }
-        else
-        {
-        }
+
+        envProg.SetEnvironment();
     }
 
     void Update()
@@ -69,7 +65,7 @@ public class SaveController : MonoBehaviour
             }
         }
 
-        SaveObject loadedSave = new SaveObject
+        SaveObject loadedSave = new()
         {
             conditions = gameConditions,
             documents = gameDocuments
@@ -89,5 +85,10 @@ public class SaveController : MonoBehaviour
     public int MinutesSinceLastSave()
     {
         return (int)Mathf.Floor(timeSinceSave / 60f);
+    }
+
+    public void DeleteSave()
+    {
+        File.Delete(savePath + "/" + saveFileName);
     }
 }

@@ -114,4 +114,13 @@ public class Menu : MonoBehaviour
 
         Time.timeScale = 1;
     }
+
+    public void CloseMenuToResetGame()
+    {
+        AudioManager.instance.UnpauseAudio();
+
+        Cursor.visible = false;
+
+        Time.timeScale = 1;
+    }
 }

@@ -24,7 +24,7 @@ public class Instructions : MonoBehaviour
         }
     }
 
-    void Start()
+    void OnEnable()
     {
         playerMov.enabled = false;
         playerRot.enabled = false;
