@@ -23,7 +23,7 @@ public class CreditSequence : MonoBehaviour
     {
         elapsedTime += Time.deltaTime;
 
-        if (elapsedTime > 5 && Input.GetKeyDown(KeyCode.Escape))
+        if (elapsedTime > 5 && ProxInput.Pause)
         {
             Application.Quit();
         }

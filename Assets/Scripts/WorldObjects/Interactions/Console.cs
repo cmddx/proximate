@@ -37,10 +37,11 @@ public class Console : Interactable
 
     public override string Blocker()
     {
-        // if (!consoleEnabled)
-        // {
-        //     return "error:" + "starting up";
-        // }
+        if (!consoleEnabled)
+        {
+            // return "error:" + "starting up";
+			return "";
+        }
 
         return "";
     }

@@ -6,7 +6,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/Document List")]
 public class DocumentList : ItemList<DocumentData>
 {
-    public new DocumentData FindItemFromReferenceName(string referenceName)
+    public DocumentData FindItemFromReferenceName(string referenceName)
     {
         foreach (DocumentData documentData in items)
         {
@@ -31,7 +31,9 @@ public class DocumentList : ItemList<DocumentData>
 		
         foreach (DocumentData documentData in items)
         {
-            if (Random.Range(0,100) <= 10 || documentData.unlocked && !documentData.uploaded)
+			if (returnedDocs.Count > 1) continue;
+
+            if (UnityEngine.Random.Range(0,100) <= 10 || documentData.unlocked && !documentData.uploaded)
                 returnedDocs.Add(documentData);
         }
 

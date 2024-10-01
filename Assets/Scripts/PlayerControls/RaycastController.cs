@@ -111,7 +111,7 @@ public class RaycastController : MonoBehaviour
             interactionPossible = true;
         }
 
-        if (Input.GetMouseButtonDown(0) && interactionPossible)
+        if (ProxInput.Interact && interactionPossible)
         {
             interactable.Interact();
         }
