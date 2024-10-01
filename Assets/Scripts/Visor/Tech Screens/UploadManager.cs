@@ -76,6 +76,8 @@ public class UploadManager : MonoBehaviour
 
             if (intervalTicker >= intervalLength)
             {
+                if (intervalCount == numDocs) break; // fixes a potential race condition
+
                 documentText.text = documentsToUpload[intervalCount].
                     documentPrefab.name.Substring(3);
 

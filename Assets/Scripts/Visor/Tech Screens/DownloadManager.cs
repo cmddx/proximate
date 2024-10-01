@@ -87,6 +87,8 @@ public class DownloadManager : MonoBehaviour
 
             if (intervalTicker >= intervalLength)
             {
+                if (intervalCount == numDocs) break; // fixes a potential race condition
+
                 if (!isSonaVisor)
                 {
                     documentText.text = documentsToDownload[intervalCount].

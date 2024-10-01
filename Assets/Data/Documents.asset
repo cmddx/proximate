@@ -15,20 +15,20 @@ MonoBehaviour:
   items:
   - documentPrefab: {fileID: 5386743559947382062, guid: 75f00729fc2c14598bfa675a1672e857, type: 3}
     unlocked: 0
-    uploaded: 0
-    read: 0
+    uploaded: 1
+    read: 1
   - documentPrefab: {fileID: 5386743559947382062, guid: 657ed96a2fb5a489d890c674820f6bbf, type: 3}
     unlocked: 0
-    uploaded: 0
-    read: 0
+    uploaded: 1
+    read: 1
   - documentPrefab: {fileID: 4816795592260199813, guid: e12f15b448e98460baa726450e81d12e, type: 3}
     unlocked: 1
     uploaded: 1
-    read: 0
+    read: 1
   - documentPrefab: {fileID: 8655841276595096234, guid: 153fc6b50f9b1465c877eb7c8562824a, type: 3}
     unlocked: 1
     uploaded: 1
-    read: 0
+    read: 1
   - documentPrefab: {fileID: 1860047891389051865, guid: 1d01cf801588348cb8de2237f8d3456e, type: 3}
     unlocked: 0
     uploaded: 0
