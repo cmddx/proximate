@@ -13,15 +13,15 @@ public class VisorContents : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(1) && canOpenMap.value)
+        if (ProxInput.Map && canOpenMap.value)
         {
             defaultTimeline.PlayTimeline(navToMap);
             mapUp = true;
         }
-        else if (Input.GetMouseButtonUp(1) && mapUp)
+        else if (!ProxInput.Map && mapUp)
         {
             defaultTimeline.PlayTimeline(mapToNav);
             mapUp = false;
         }
-    }
+    } 
 }

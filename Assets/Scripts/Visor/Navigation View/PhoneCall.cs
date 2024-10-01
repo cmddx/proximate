@@ -78,7 +78,7 @@ public class PhoneCall : MonoBehaviour
     {
         if (inCall) return;
 
-        float slideChange = Input.GetAxis("Mouse X");
+        float slideChange = ProxInput.Look.x;
 
         if (slidePos >= minimumPos && slideChange < 0
             || slideChange > minimumPos)

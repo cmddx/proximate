@@ -24,7 +24,6 @@ public class PlayerMovement : MonoBehaviour
     bool collided;
     bool pushLeft;
     bool pushRight;
-    bool walking;
 
     void Start()
     {
@@ -33,8 +32,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        float inputX = Input.GetAxis("Horizontal");
-        float inputY = Input.GetAxis("Vertical");
+        float inputX = ProxInput.Move.x;
+        float inputY = ProxInput.Move.y;
 
         Vector2 velocityVert = new Vector2(0, 0);
         Vector2 velocityHoriz = new Vector2(0, 0);
@@ -77,14 +76,12 @@ public class PlayerMovement : MonoBehaviour
             {
                 footstepTrack.start();
                 footstepTrack.setParameterByName("Walking", 1);
-                walking = true;
             }
         }
         else
         {
             // footstepTrack.stop(STOP_MODE.ALLOWFADEOUT);
             footstepTrack.setParameterByName("Walking", 0);
-            walking = false;
         }
     }
 
