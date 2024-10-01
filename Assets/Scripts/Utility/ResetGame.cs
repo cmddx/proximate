@@ -7,7 +7,6 @@ public class ResetGame : MonoBehaviour
 {
     [SerializeField] SaveController saveController;
 
-
     public void Reset()
     {
         saveController.DeleteSave();
