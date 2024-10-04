@@ -35,7 +35,7 @@ public class Menu : MonoBehaviour
     {
         if (instructions.activeInHierarchy) return;
 
-        if (Input.GetKeyDown(KeyCode.Escape) &&
+        if (ProxInput.Pause &&
             (Time.unscaledTime - lastEscPress > 0.1f))
         {
             lastEscPress = Time.unscaledTime;
