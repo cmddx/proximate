@@ -7,14 +7,19 @@ using UnityEngine.InputSystem.LowLevel;
 
 public class VirtualMouse : VirtualMouseInput
 {
-    new void OnEnable()
-    {
+	[SerializeField] float minX;
+	[SerializeField] float maxX;
+	[SerializeField] float minY;
+	[SerializeField] float maxY;
+
+	new void OnEnable()
+	{
 		base.OnEnable();
 
-        // centers the cursor
-        Cursor.lockState = CursorLockMode.None;
+		// centers the cursor
+		Cursor.lockState = CursorLockMode.None;
 
-		Set(cursorTransform.anchoredPosition/2); 
+		Set(new Vector2(960, 540));
 	}
 
 	void Update()
@@ -24,8 +29,14 @@ public class VirtualMouse : VirtualMouseInput
 
 	void Set(Vector2 position)
 	{
-		cursorTransform.anchoredPosition = (Vector3)position;
-		InputState.Change(virtualMouse.position, position);
+		float cursorX = Mathf.Max(minX, position.x);
+		cursorX = Mathf.Min(maxX, cursorX);
+		float cursorY = Mathf.Max(minY, position.y);
+		cursorY = Mathf.Min(maxY, cursorY);
 
+		Vector2 mousePosition = new Vector2(cursorX, cursorY);
+
+		cursorTransform.anchoredPosition = mousePosition;
+		InputState.Change(virtualMouse.position, mousePosition);
 	}
 }
