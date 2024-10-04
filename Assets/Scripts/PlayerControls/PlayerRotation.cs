@@ -11,7 +11,7 @@ public class PlayerRotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        aimChange = Input.GetAxis("Mouse X");
+        aimChange = ProxInput.Look.x;
 
         transform.localEulerAngles += new Vector3(0, 0, -aimChange * speed);
         playerRotation.Value = transform.localEulerAngles.z;
