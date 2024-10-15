@@ -61,12 +61,12 @@
                 },
                 {
                     "name": "Scroll",
-                    "type": "PassThrough",
+                    "type": "Value",
                     "id": "acbf9bae-de33-43a3-b1ca-7c94a644e29a",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -137,28 +137,6 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "up",
-                    "id": "e88636cc-d0dc-443a-9ea3-32fd5a29efbb",
-                    "path": "<Gamepad>/rightStick/up",
-                    "interactions": "",
-                    "processors": "Scale(factor=0.1)",
-                    "groups": "",
-                    "action": "Look",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "0e8c404c-ef3e-4300-9fcf-06f57d61a230",
-                    "path": "<Gamepad>/rightStick/down",
-                    "interactions": "",
-                    "processors": "Scale(factor=0.1)",
-                    "groups": "",
-                    "action": "Look",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
                     "name": "left",
                     "id": "e7c9d6e1-751c-418e-bdff-5d123dca92ba",
                     "path": "<Gamepad>/rightStick/left",
@@ -204,19 +182,8 @@
                 },
                 {
                     "name": "",
-                    "id": "13d4613b-4b48-4f0c-a6c9-9e089ce562d1",
-                    "path": "<Gamepad>/buttonWest",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Map",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "a8c31d7d-c830-4339-8b00-b3194d0ef818",
-                    "path": "<Gamepad>/buttonNorth",
+                    "id": "e59c97f8-b000-475c-a051-dc47c272782d",
+                    "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -250,17 +217,6 @@
                     "name": "",
                     "id": "6a3c7838-ca3f-4d27-aad5-e8def46b1f6d",
                     "path": "<Gamepad>/buttonSouth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Interact",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "e59c97f8-b000-475c-a051-dc47c272782d",
-                    "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -352,6 +308,28 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Default",
+                    "action": "Scroll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "72fadb94-8578-45eb-9c1f-b89167a5c88a",
+                    "path": "<Mouse>/scroll",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Scroll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1649ae84-9345-4d56-86b8-7f0432f360f6",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "ScaleVector2(y=20)",
+                    "groups": "",
                     "action": "Scroll",
                     "isComposite": false,
                     "isPartOfComposite": false

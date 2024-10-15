@@ -16,6 +16,7 @@ public class ProxInput : MonoBehaviour
 	private static InputAction map;
 	private static InputAction pause;
 	public static InputAction point;
+	public static InputAction scroll;
 
 	public static Vector2 Move { get { return move.ReadValue<Vector2>(); } }
 	public static Vector2 Look { get { return look.ReadValue<Vector2>(); } }
@@ -23,16 +24,17 @@ public class ProxInput : MonoBehaviour
 	public static bool Map { get { return map.IsPressed(); } }
 	public static bool Pause { get { return pause.WasPressedThisFrame(); } }
 	public static Vector2 Point { get { return point.ReadValue<Vector2>(); } }
-	
+	public static Vector2 Scroll { get { return scroll.ReadValue<Vector2>(); } }
 
-    // Start is called before the first frame update
-    void Start()
-    {
+
+	// Start is called before the first frame update
+	void Start()
+	{
 		if (controls == null)
-        {
-            controls = new InputActions();
+		{
+			controls = new InputActions();
 		}
-        
+
 		controls.Inputs.Enable();
 		move = controls.FindAction("Move");
 		look = controls.FindAction("Look");
@@ -40,17 +42,18 @@ public class ProxInput : MonoBehaviour
 		map = controls.FindAction("Map");
 		pause = controls.FindAction("Pause");
 		point = controls.FindAction("Point");
-    }
+		scroll = controls.FindAction("Scroll");
+	}
 
 	public void OnEnable()
 	{
 		Start();
 	}
 
-    public void OnDisable()
-    {
-        controls.Inputs.Disable();
-    }
+	public void OnDisable()
+	{
+		controls.Inputs.Disable();
+	}
 }
 
 

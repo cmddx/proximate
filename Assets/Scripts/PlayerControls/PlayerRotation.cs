@@ -13,6 +13,9 @@ public class PlayerRotation : MonoBehaviour
     {
         aimChange = ProxInput.Look.x;
 
+        if (aimChange > 0.35) aimChange = 0.35f;
+        if (aimChange < -0.35) aimChange = -0.35f;
+
         transform.localEulerAngles += new Vector3(0, 0, -aimChange * speed);
         playerRotation.Value = transform.localEulerAngles.z;
     }

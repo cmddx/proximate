@@ -38,6 +38,11 @@ public class Door : Interactable
 
         openEmitter.Play();
 
+        if (GetComponent<DoorControlsEmitter>() != null)
+        {
+            GetComponent<DoorControlsEmitter>().PlayIfRoomEnter();
+        }
+
         yield return new WaitForSeconds(1.5f);
         opening = false;
 
@@ -61,6 +66,11 @@ public class Door : Interactable
         GetComponent<BoxCollider2D>().enabled = true;
         spriteRenderer.enabled = true;
         doorOpen = false;
+
+        if (GetComponent<DoorControlsEmitter>() != null)
+        {
+            GetComponent<DoorControlsEmitter>().StopIfRoomExit();
+        }
     }
 
     public override string Blocker()
