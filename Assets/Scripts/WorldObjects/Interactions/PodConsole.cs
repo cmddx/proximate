@@ -71,10 +71,10 @@ public class PodConsole : Interactable
 
         if (endingType == "hole")
         {
-            yield return new WaitForSeconds(40);
+            yield return new WaitForSeconds(41);
             AudioManager.instance.PlayOneShot(endOfTheWorld);
 
-            yield return new WaitForSeconds(52);
+            yield return new WaitForSeconds(51);
             GetComponent<SceneTransition>().ChangeScene();
         }
 

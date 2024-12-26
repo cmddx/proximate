@@ -54,6 +54,18 @@ public class DocumentList : ItemList<DocumentData>
 
         return index;
     }
+
+    public void Reset(){
+        for (int i = 2; i < items.Count; i++)
+        {
+            items[i].read = false;
+
+            if(i >= 4){
+                items[i].unlocked = false;
+                items[i].uploaded = false;
+            }
+        }
+    }
 }
 
 [System.Serializable]

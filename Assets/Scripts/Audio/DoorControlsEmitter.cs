@@ -13,6 +13,7 @@ public class DoorControlsEmitter : MonoBehaviour
     public void PlayIfRoomEnter()
     {
         if (control != null && control.alreadyConnected) return;
+        if(!emitterTransform.gameObject.activeInHierarchy) return;
 
         float distanceDoorToEmitter = Vector3.Distance(
             emitterTransform.position, transform.position);
@@ -28,6 +29,7 @@ public class DoorControlsEmitter : MonoBehaviour
     public void StopIfRoomExit()
     {
         if (control != null && control.alreadyConnected) return;
+        if(!emitterTransform.gameObject.activeInHierarchy) return;
 
         float distanceDoorToEmitter = Vector3.Distance(
             emitterTransform.position, transform.position);

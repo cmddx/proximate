@@ -33,4 +33,13 @@ public class Instructions : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
+
+    public void DisableFromLoad()
+    {
+        playerMov.enabled = true;
+        playerRot.enabled = true;
+        rayCont.enabled = true;
+
+        gameObject.SetActive(false);
+    }
 }

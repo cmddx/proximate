@@ -14,6 +14,10 @@ public class SceneTransition : MonoBehaviour
 
     IEnumerator FadeOut()
     {
+        AsyncOperation asyncOperation = SceneManager.
+            LoadSceneAsync("HoleEndingScene");
+        asyncOperation.allowSceneActivation = false;
+
         float elapsedTime = 0;
 
         while (elapsedTime < 2f)
@@ -26,6 +30,13 @@ public class SceneTransition : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
 
-        SceneManager.LoadScene("HoleEndingScene", LoadSceneMode.Single);
+        while (!asyncOperation.isDone)
+        {
+            if (asyncOperation.progress >= 0.9f)
+            {
+                asyncOperation.allowSceneActivation = true;
+            }
+            yield return null;
+        }
     }
 }

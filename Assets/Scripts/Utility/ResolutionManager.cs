@@ -22,6 +22,8 @@ public class ResolutionManager : MonoBehaviour
             Screen.SetResolution(1920, 1080, true);
             Resize(rendTex, 1920, 1080);
         }
+
+        Application.targetFrameRate = 60; 
     }
 
     void Resize(RenderTexture renderTexture, int width, int height)

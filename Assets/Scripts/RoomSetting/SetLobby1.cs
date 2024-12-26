@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SetLobby1 : SettableRoom
 {
+    [SerializeField] GameObject thingBreathing;
+
     public override void SetToDefault()
     {
         SetTerminalsConnected(false);
@@ -12,5 +14,7 @@ public class SetLobby1 : SettableRoom
     public override void SetToComplete()
     {
         SetTerminalsConnected(true);
+
+        thingBreathing.SetActive(true);
     }
 }

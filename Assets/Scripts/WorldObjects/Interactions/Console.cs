@@ -10,11 +10,17 @@ public class Console : Interactable
     [SerializeField] TimelineAsset timelineToPlay;
     [SerializeField] DocumentList documentList;
     [SerializeField] UploadManager uploadManager;
+    [SerializeField] ConditionList gameConditions;
+
     bool consoleEnabled;
 
     void Start()
     {
-        consoleEnabled = false;
+        ConditionData progress = gameConditions.Get("progressIndex");
+
+        if(progress.value == 0)
+            consoleEnabled = false;
+        else consoleEnabled = true;
     }
 
     public override void Interact()

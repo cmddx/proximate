@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnvironmentProgession : MonoBehaviour
 {
-    // progress index 2 (bedrooms unlocked)
     [SerializeField] List<SettableRoom> roomSettings;
     [SerializeField] ConditionList conditions;
     ConditionData progressIndex;

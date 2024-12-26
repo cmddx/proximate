@@ -15,6 +15,11 @@ public class GoalIcon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(currentGoals == null){
+            gameObject.SetActive(false);
+            return;
+        }
+
         for (int i = 0; i < currentGoals.Count; i++)
         {
             if (!iconPivots[i].gameObject.activeInHierarchy)

@@ -9,8 +9,6 @@ public class SetKitchen : SettableRoom
     public override void SetToDefault()
     {
         SetTerminalsConnected(false);
-
-        thingBreathing.SetActive(true);
     }
 
     public override void SetToComplete()

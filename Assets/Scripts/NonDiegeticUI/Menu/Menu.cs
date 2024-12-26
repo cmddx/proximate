@@ -11,7 +11,10 @@ public class Menu : MonoBehaviour
     [SerializeField] GameObject visorDisplay;
     [SerializeField] GameObject menuContents;
     [SerializeField] GameObject menuSettings;
+    [SerializeField] GameObject menuInstructions;
     [SerializeField] GameObject menuQuit;
+    [SerializeField] GameObject cursor;
+    [SerializeField] GameObject cursorIngame;
     [SerializeField] Material glitchMat;
     [SerializeField] GameObject instructions;
     [SerializeField] SaveController saveController;
@@ -19,9 +22,9 @@ public class Menu : MonoBehaviour
     bool menuOpen;
     bool cursorWasLocked;
     bool playerHadControl;
+    bool techCursorWasEnabled;
 
     float lastEscPress;
-
     float glitchMatValue;
 
     // Start is called before the first frame update
@@ -51,14 +54,21 @@ public class Menu : MonoBehaviour
 
         Time.timeScale = 0;
 
-        Cursor.visible = true;
-
         if (Cursor.lockState == CursorLockMode.Locked)
         {
             cursorWasLocked = true;
             Cursor.lockState = CursorLockMode.None;
         }
         else cursorWasLocked = false;
+
+        Cursor.visible = false;
+
+        if(cursorIngame.activeInHierarchy){
+            techCursorWasEnabled = true;
+            cursorIngame.SetActive(false);
+        } else techCursorWasEnabled = false;
+
+        cursor.SetActive(true);
 
         AudioManager.instance.PauseAudio();
 
@@ -89,12 +99,17 @@ public class Menu : MonoBehaviour
 
         menuContents.SetActive(false);
         menuSettings.SetActive(false);
+        menuInstructions.SetActive(false);
         menuQuit.SetActive(false);
 
         GetComponent<UnityEngine.UI.Image>().enabled = false;
         visorDisplay.SetActive(true);
 
-        // glitchMat.SetFloat("_Strength", glitchMatValue);
+        cursor.SetActive(false);
+
+        if(techCursorWasEnabled){
+            cursorIngame.SetActive(true);
+        }
 
         if (cursorWasLocked)
         {
@@ -110,16 +125,12 @@ public class Menu : MonoBehaviour
 
         AudioManager.instance.UnpauseAudio();
 
-        Cursor.visible = false;
-
         Time.timeScale = 1;
     }
 
     public void CloseMenuToResetGame()
     {
         AudioManager.instance.UnpauseAudio();
-
-        Cursor.visible = false;
 
         Time.timeScale = 1;
     }

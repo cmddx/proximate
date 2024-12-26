@@ -40,7 +40,10 @@ public class Door : Interactable
 
         if (GetComponent<DoorControlsEmitter>() != null)
         {
-            GetComponent<DoorControlsEmitter>().PlayIfRoomEnter();
+            foreach (var dce in GetComponents<DoorControlsEmitter>())
+            {
+                dce.PlayIfRoomEnter();
+            }
         }
 
         yield return new WaitForSeconds(1.5f);
@@ -69,7 +72,10 @@ public class Door : Interactable
 
         if (GetComponent<DoorControlsEmitter>() != null)
         {
-            GetComponent<DoorControlsEmitter>().StopIfRoomExit();
+            foreach (var dce in GetComponents<DoorControlsEmitter>())
+            {
+                dce.StopIfRoomExit();
+            }
         }
     }
 

@@ -8,13 +8,18 @@ public class PlayerRotation : MonoBehaviour
     public DynamicFloat playerRotation;
     float aimChange;
 
+    float defaultSensitivity = 1;
+
     // Update is called once per frame
     void Update()
     {
-        aimChange = ProxInput.Look.x;
+        float sensitivity = PlayerPrefs.GetFloat("controlSensitivity", 
+            defaultSensitivity);
 
-        if (aimChange > 0.35) aimChange = 0.35f;
-        if (aimChange < -0.35) aimChange = -0.35f;
+        aimChange = ProxInput.Look.x * sensitivity;
+
+        if (aimChange > 2) aimChange = 2f;
+        if (aimChange < -2) aimChange = -2f;
 
         transform.localEulerAngles += new Vector3(0, 0, -aimChange * speed);
         playerRotation.Value = transform.localEulerAngles.z;

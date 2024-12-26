@@ -11,6 +11,8 @@ public class SaveController : MonoBehaviour
     [SerializeField] DocumentList gameDocuments;
     [SerializeField] Transform playerTransform;
     [SerializeField] EnvironmentProgession envProg;
+    [SerializeField] Instructions instructions;
+    [SerializeField] GameObject visorDisplay;
 
     string saveFileName = "save.txt";
     float timeSinceSave;
@@ -20,6 +22,9 @@ public class SaveController : MonoBehaviour
         if (SaveFileExists())
         {
             LoadGame();
+
+            instructions.DisableFromLoad();
+            visorDisplay.SetActive(true);
         }
 
         envProg.SetEnvironment();

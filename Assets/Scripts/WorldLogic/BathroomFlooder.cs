@@ -9,6 +9,7 @@ public class BathroomFlooder : MonoBehaviour
     [SerializeField] TimelineAsset toiletVoice;
     [SerializeField] Door leftDoor;
     [SerializeField] Door rightDoor;
+    [SerializeField] GameObject vent;
 
     // float doorMalfunctionDelay = 1;
 
@@ -20,6 +21,8 @@ public class BathroomFlooder : MonoBehaviour
         rightDoor.blockerName = "emergency lock - flooding detected";
 
         leftDoor.progressIndexRequirement = 100;
+
+        vent.SetActive(true);
 
         // StartCoroutine(DoorsMalfunction());
     }

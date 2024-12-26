@@ -36,11 +36,7 @@ public class ThingBreathing : MonoBehaviour
         // finished countdown actions
         thingBreathing.Stop();
         bangSound.Play();
-        Destroy(gameObject, 8); // destroy this after the bang sound is done
-    }
 
-    void OnDisable()
-    {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }

@@ -2377,7 +2377,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Pitch Deck Brainstorming (November 2028)
 
-    Last edit made: 4 years
+    Last edit made: 3 years
     ago'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e08099ffd40094692ad2cd975f9327d4, type: 2}
@@ -2793,11 +2793,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8121682343043858481, guid: dcc0d617c542447d287f9e56786c2685, type: 3}
       propertyPath: m_Size
-      value: 0.2
+      value: 0.202
       objectReference: {fileID: 0}
     - target: {fileID: 8121682343043858481, guid: dcc0d617c542447d287f9e56786c2685, type: 3}
       propertyPath: m_Value
-      value: 0.9975
+      value: 0.9987469
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

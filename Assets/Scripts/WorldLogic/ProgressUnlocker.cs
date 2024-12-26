@@ -9,7 +9,8 @@ public class ProgressUnlocker : MonoBehaviour
     [SerializeField] List<TimelineAsset> unlockNotifs;
     [SerializeField] TimelineManager subtitleTimeline;
     [SerializeField] ConditionList conditions;
-    [SerializeField] GoalMarkers goalMarkers;
+    [SerializeField] GoalMarkers goalMarkersNav;
+    [SerializeField] GoalMarkers goalMarkersConsole;
     [SerializeField] GoalIcon goalIcons;
     [SerializeField] SaveController saveController;
     ConditionData progressIndex;
@@ -26,7 +27,8 @@ public class ProgressUnlocker : MonoBehaviour
 
         if(progressIndex.value == 9) return;
 
-        goalMarkers.UnlockNextMarkers(progressIndex.value);
+        goalMarkersNav.UnlockNextMarkers(progressIndex.value);
+        goalMarkersConsole.UnlockNextMarkers(progressIndex.value);
         goalIcons.SetCurrentGoals(progressIndex.value);
     }
 
@@ -39,7 +41,8 @@ public class ProgressUnlocker : MonoBehaviour
 
         if(progressIndex.value == 9) return;
 
-        goalMarkers.UnlockNextMarkers(progressIndex.value);
+        goalMarkersNav.UnlockNextMarkers(progressIndex.value);
+        goalMarkersConsole.UnlockNextMarkers(progressIndex.value);
         goalIcons.SetCurrentGoals(progressIndex.value);
         this.GetComponent<EnvironmentProgession>().UpdateEnvironment();
     }

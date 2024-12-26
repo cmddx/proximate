@@ -9753,9 +9753,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: i remember you sunbathing by the yarra after work, insisting you didnt
-    need sunscreen even as your neck turned red. i remember you letting the fed square
-    gulls steal chips from your lunch because you "admire a boss babe who takes what
-    she wants". i remember you holding simons hand
+    need sunscreen even as your neck turned red. i remember you holding simons hand
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e08099ffd40094692ad2cd975f9327d4, type: 2}
   m_sharedMaterial: {fileID: 6069534209609979758, guid: e08099ffd40094692ad2cd975f9327d4, type: 2}
@@ -10102,9 +10100,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: the whole submarine trip here while he listed off nautical accident statistics.
-    i remember you jamming on my guitar and coming up with dorky shanties about mariners
-    fighting dust krakens while i cleaned oxygen cyclers. i remember how you stopped
-    watching me clean oxygen cyclers when you started banging willow.
+    i remember you jamming on your guitar and coming up with dorky shanties while
+    i cleaned oxygen cyclers. i remember how you stopped playing guitar when you
+    started banging willow.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e08099ffd40094692ad2cd975f9327d4, type: 2}
   m_sharedMaterial: {fileID: 6069534209609979758, guid: e08099ffd40094692ad2cd975f9327d4, type: 2}
@@ -10143,7 +10141,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 1
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -11511,7 +11509,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190319688132866609, guid: 10b1f3dee02564a248a850a0babbc3cb, type: 3}
       propertyPath: m_Name
-      value: xx_ellariot366.chat
+      value: 46_ellariot366.chat
       objectReference: {fileID: 0}
     - target: {fileID: 2208527962075656961, guid: 10b1f3dee02564a248a850a0babbc3cb, type: 3}
       propertyPath: m_text
@@ -11591,11 +11589,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4690012807829346814, guid: 10b1f3dee02564a248a850a0babbc3cb, type: 3}
       propertyPath: m_Size
-      value: 0.21504614
+      value: 0.23076923
       objectReference: {fileID: 0}
     - target: {fileID: 4690012807829346814, guid: 10b1f3dee02564a248a850a0babbc3cb, type: 3}
       propertyPath: m_Value
-      value: 0.99864376
+      value: 0.99851483
       objectReference: {fileID: 0}
     - target: {fileID: 5536152938132333712, guid: 10b1f3dee02564a248a850a0babbc3cb, type: 3}
       propertyPath: m_AnchorMax.x
@@ -11655,7 +11653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6185464332505966578, guid: 10b1f3dee02564a248a850a0babbc3cb, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1409
+      value: 1313
       objectReference: {fileID: 0}
     - target: {fileID: 6185464332505966578, guid: 10b1f3dee02564a248a850a0babbc3cb, type: 3}
       propertyPath: m_AnchoredPosition.y

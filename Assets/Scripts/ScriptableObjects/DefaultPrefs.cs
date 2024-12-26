@@ -7,5 +7,6 @@ public class DefaultPrefs : ScriptableObject
 {
     public float sfxVolume;
     public float voiceVolume;
+    public float mouseSensitivity;
     public int fullscreen;
 }

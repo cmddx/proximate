@@ -17,6 +17,13 @@ public class ConditionList : ItemList<ConditionData>
         Debug.Log("Failed to find item: " + referenceName);
         return default;
     }
+
+    public void Reset(){
+        foreach (ConditionData conditionData in items)
+        {
+            conditionData.value = 0;
+        }
+    }
 }
 
 [System.Serializable]

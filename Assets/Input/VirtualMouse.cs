@@ -12,6 +12,8 @@ public class VirtualMouse : VirtualMouseInput
 	[SerializeField] float minY;
 	[SerializeField] float maxY;
 
+	float defaultSensitivity = 1;
+
 	new void OnEnable()
 	{
 		base.OnEnable();
